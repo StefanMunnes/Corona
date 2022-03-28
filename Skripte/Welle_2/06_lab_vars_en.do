@@ -236,7 +236,7 @@ lab define sat_lab  1 "very dissatisfied" 7 "very satisfied", replace
 
 lab define concern_lab 1 "very concerned" 7 "not concerned at all", replace
 
-lab define other_lab 2 "No" 1 "Yes, namely:", replace
+lab define other_lab 0 "No" 1 "Yes, namely:", replace
 
 
 lab define hhinc_lab ///
