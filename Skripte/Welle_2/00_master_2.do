@@ -74,7 +74,7 @@ save "Daten/Arbeitsdaten/corona_2_de.dta", replace
 do "Skripte/Welle_2/06_lab_vars_en.do"
 
 foreach var of varlist *other {
-	replace `var' = "Yes" if `var' != "Ja"
+	replace `var' = "Yes" if `var' == "Ja"
 }
 
 save "Daten/Arbeitsdaten/corona_2_en.dta", replace

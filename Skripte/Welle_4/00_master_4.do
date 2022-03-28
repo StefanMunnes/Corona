@@ -1,7 +1,6 @@
 ********************************************************************************
-* Master-File zur Aubereitung der LimeSurvey-Daten der Studie corona-alltag.de
 *
-* Verantwortlich Lena Hipp, Mareike Bünning, Stefan Munnes
+* Master-File zur Aubereitung der LimeSurvey-Daten der Studie corona-alltag.de
 *
 ********************************************************************************
 
@@ -66,7 +65,7 @@ save "Daten/Arbeitsdaten/corona_4_de.dta", replace
 do "Skripte/Welle_4/06_lab_vars_en.do"
 
 foreach var of varlist *other {
-	replace `var' = "Yes" if `var' != "Ja"
+	replace `var' = "Yes" if `var' == "Ja"
 }
 
 save "Daten/Arbeitsdaten/corona_4_en.dta", replace
