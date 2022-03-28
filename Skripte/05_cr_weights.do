@@ -36,25 +36,7 @@ foreach language in "de" "en" {
     lab var weight_trim "Weighting factor (trimmed)"
   }
 
-
-  order id wave version interviewtime surveyday lastgroup /// Group 1
-    media invited remind* panel* weight* *flag ///
-    link* /// Group 2
-    q01gndr female agegr q03empsts q04newemp q04status* status q04bjobloss /// Group 3
-    q05ctrtype* q05selfempl q05cntrct permempl selfempl q06firmsize /// Group 4
-  	q07indust q08prof sysjob q09wtime q10currenttime q11usualwh q11lastwh ///
-  	q11reason* q11compen* q12office* homeoffice* q12time* q13support ///
-    q14partner q15achildren fam q15bchildren nrchildren q16* /// Group 5
-    youngest* q17childcare* childcare q17childtvtime? q17childcaresub* ///
-    q17gendernorm* q18divlab? q19currentdiv? ///
-    q20sat* q21concern* /// Group 6
-    q23land q23plz q24townsize q25otherplace* q25hhsize q25otherhhmem* /// Group 7
-    q26flatsize raumbedarf wohnsit q27educ* edu tertiary q28migr ///
-    q29gndrpar q30empstspar q30currenttimepar q31usualwhpar q31lastwhpar /// Group 8
-    q31profpar p_sysjob q32officepar* q33educpar* p_edu ///
-    q34hhinc hhinc q34prevhhinc /// Group 9
-    q35distress* q35health* /// Group 10
-    outro2 // Group11
+  order weight*, after(panel_typ)
 
   compress
 

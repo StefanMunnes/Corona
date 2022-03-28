@@ -286,16 +286,18 @@ foreach language in "de" "en" {
   	q05ctrtype* q05selfempl q05cntrct permempl selfempl q06 /// FG4
      q07indust q07indust2 q07indchange q07indust2pre q08* sysjob q09wtime q11usualwh ///
       q10currenttime q11lastwh q11reason* q11lockdown* q11reduction* q11realisation* ///
-      q11compen* q12office* homeoffice* q12hopref q12workcond* q12time* q13support* /// 
+      q11compen* q12office* homeoffice* q12hopref q12workcond* q12time* q13support* ///
   	q14* q15achildren fam q15bchildren nrchildren q16byrchild* q16childage* /// FG5
       youngest* q17childcare? q17childcare?? q17childcareother childcare q17childtvtime? ///
-  		q17childcaresub* q17gendernorm* q18* q19* ///
+  		q17childcaresub* q17gendernorm* q18schoolage* q18schoolform* ///
+        q18schoolsat* q18schoolsit* q18divlab* q19* ///
   	q20sat* q20crisis? q20crisisland? q20famsup? q20famsupother q20famsupsat?? q21* /// FG6
     q23land q23plz q24townsize q25otherplace* q25hhsize q25otherhhmem* /// FG7
       q26flatsize raumbedarf wohnsit q27educ* edu tertiary q28migr ///
-  	q29 q30* q31* p_sysjob q32* q33* p_edu ///FG8
+  	q29 q30* q31usualwhpar q31lastwhpar q31profpar p_sysjob q32* q33* p_edu ///FG8
   	q34hhinc hhinc q34prevhhinc /// FG9
-  	q35distress1? q35distress2? q35health? // FG10
+  	q35distress1? q35distress2? q35health? /// FG10
+    outro2 // FG11
 
   sort id wave
 
