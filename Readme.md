@@ -14,6 +14,6 @@ Project webpage at [wzb.eu](https://wzb.eu/de/forschung/dynamiken-sozialer-ungle
 ***
 
 ### Data
-Version 1.1 at [gesis](https://data.gesis.org/sharing/#!Detail/10.7802/2122)
 
-Version 2.0 at [gesis](https://data.gesis.org/sharing/#!Detail/10.7802/2324)
+Version 2.0 at [gesis](https://data.gesis.org/sharing/#!Detail/10.7802/2324)\
+Version 1.1 at [gesis](https://data.gesis.org/sharing/#!Detail/10.7802/2122)
